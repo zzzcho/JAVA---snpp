@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.image-container { 
+	flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e0; /* Fondo para el área de imagen */
+    padding: 20px; /* Añadir espacio alrededor de la imagen */	
+}
+.image-container img {
+	width: 80%; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    max-height: 300px; /* Limita la altura máxima de la imagen */
+    object-fit: contain; /* Ajusta la imagen para que mantenga proporción */
+    border-radius: 8px;
+}
+.form-container {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos del formulario */
+form {
+    width: 100%;
+    text-align: center;
+}
+
+input[name="email"],
+input[name="pass"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #76448A;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9B59B6;
+}
+
+a {
+    display: block;
+    margin-top: 10px;
+    color: #555;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #333;
+}
+
+/*Contenedor para centrar el formulario */
+body > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.logo {
+    width: 100px; /* Ajusta el tamaño según tus necesidades */
+    display: block;
+    margin: 0 auto 20px auto; /* Centrar la imagen y agregar un margen inferior */
+}
+
